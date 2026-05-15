@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Point Studios | Home</title>
+  <meta name="description"
+    content="Three Point Studios creates strategic video content that drives business results. From full production to social media assets, we craft authentic stories through consumer-focused creativity and data-driven insights.">
+
+  <link rel="icon" href="images/favicon.webp">
+
+  <style>
+    /* ── FONTS ─────────────────────────────────────────────── */
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 300;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 600;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 700;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Gloock';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/gloock/v8/Iurb6YFw84WUY4NJhhakNrc.woff2) format('woff2');
+    }
+
+    /* ── RESET ─────────────────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      background: #0a0909;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ── NAV ───────────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 200;
+      background: rgba(10, 9, 9, 0.6);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 4px 40px;
+    }
+
+    .nav-left {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo img {
+      height: 80px;
+      width: auto;
+    }
+
+    .nav-links a {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .nav-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      transition: border-color 0.2s;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .nav-icon:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .nav-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ── HERO ──────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      background: #0a0909;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 48px;
+      overflow: hidden;
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.38;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-headline {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: clamp(52px, 7.5vw, 110px);
+      font-weight: 700;
+      line-height: 1.0;
+      color: #fff;
+      margin-bottom: 32px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 700px;
+      margin: 0 auto 52px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 15px 32px;
+      border: 1.5px solid rgba(255, 255, 255, 0.7);
+      color: #fff;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.25s, color 0.25s, border-color 0.25s;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: #0a0909;
+      border-color: #fff;
+    }
+
+    /* ── LOGO STRIP ───────────────────────────────────────── */
+    .logo-strip {
+      background: #0a0909;
+      padding: 28px 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .logo-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: scroll-left 32s linear infinite;
+    }
+
+    .logo-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 52px;
+      flex-shrink: 0;
+    }
+
+    .logo-item img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.55;
+      transition: opacity 0.2s;
+    }
+
+    .logo-item img:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .logo-strip { padding: 20px 0; }
+      .logo-item { padding: 0 32px; }
+      .logo-item img { height: 34px; }
+    }
+
+    /* ── TICKER ────────────────────────────────────────────── */
+    .ticker {
+      background: #0a0909;
+      padding: 18px 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 28s linear infinite;
+    }
+
+    .ticker-item {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      padding: 0 48px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .ticker-dot {
+      color: rgba(255, 255, 255, 0.18);
+      margin: 0 4px;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ── MOSAIC CAROUSEL ──────────────────────────────────── */
+    .mosaic {
+      position: relative;
+      background: #0a0909;
+      overflow: hidden;
+      height: 780px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 6px 0;
+    }
+
+    .mosaic-row {
+      flex: 1;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    .mosaic-track {
+      display: flex;
+      gap: 6px;
+      height: 100%;
+      width: max-content;
+      animation: mosaic-left 36s linear infinite;
+    }
+
+    .mosaic-track--reverse {
+      animation: mosaic-right 36s linear infinite;
+    }
+
+    @keyframes mosaic-left {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    @keyframes mosaic-right {
+      from { transform: translateX(-50%); }
+      to   { transform: translateX(0); }
+    }
+
+    .mosaic-img {
+      height: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .mosaic-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.65;
+      transition: opacity 0.3s;
+    }
+
+    .mosaic-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .mosaic-headline {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: clamp(56px, 8.5vw, 128px);
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 32px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 900px) {
+      .mosaic { height: 560px; }
+      .mosaic-img { border-radius: 7px; }
+    }
+
+    @media (max-width: 600px) {
+      .mosaic { height: 380px; gap: 4px; padding: 4px 0; }
+      .mosaic-img { border-radius: 5px; }
+    }
+
+    /* ── SERVICES ──────────────────────────────────────────── */
+    .services {
+      background: #fafafa;
+      padding: 100px 48px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(10, 9, 9, 0.38);
+      margin-bottom: 32px;
+    }
+
+    .services-intro {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(10, 9, 9, 0.6);
+      max-width: 680px;
+      margin-bottom: 72px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+    }
+
+    .service-card {
+      position: relative;
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .service-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .service-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 9, 9, 0.72) 0%, rgba(10, 9, 9, 0.1) 55%, transparent 100%);
+      transition: background 0.3s;
+    }
+
+    .service-card:hover .service-overlay {
+      background: linear-gradient(to top, rgba(10, 9, 9, 0.55) 0%, rgba(10, 9, 9, 0.05) 55%, transparent 100%);
+    }
+
+    .service-name {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      right: 28px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      z-index: 2;
+      letter-spacing: -0.01em;
+    }
+
+    /* ── PHILOSOPHY ────────────────────────────────────────── */
+    .philosophy {
+      background: #fff;
+      padding: 120px 48px;
+    }
+
+    .philosophy-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 72px;
+    }
+
+    .philosophy-title {
+      font-size: clamp(32px, 4vw, 60px);
+      font-weight: 700;
+      color: #000;
+      letter-spacing: -0.02em;
+      line-height: 1.0;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .philosophy-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      border-top: 1px solid rgba(10, 9, 9, 0.1);
+      padding-top: 48px;
+      margin-bottom: 80px;
+    }
+
+    .philosophy-item-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .philosophy-item-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: rgba(10, 9, 9, 0.58);
+    }
+
+    .philosophy-item-text strong {
+      color: #000;
+      font-weight: 600;
+    }
+
+    .philosophy-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+
+    .philosophy-img {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+    }
+
+    .philosophy-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .philosophy-img:hover img {
+      transform: scale(1.03);
+    }
+
+    /* ── PROJECTS ──────────────────────────────────────────── */
+    .projects {
+      background: #0a0909;
+      padding: 120px 48px;
+    }
+
+    .section-label-light {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.35);
+      margin-bottom: 60px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+    }
+
+    .project-card {
+      cursor: pointer;
+    }
+
+    .project-thumb {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .project-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .project-card:hover .project-thumb img {
+      transform: scale(1.04);
+    }
+
+    .project-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .project-card:hover .project-btn {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    /* ── MARQUEE ───────────────────────────────────────────── */
+    .marquee {
+      background: #151313;
+      padding: 22px 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 35s linear infinite;
+    }
+
+    .marquee-item {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.38);
+      padding: 0 56px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .marquee-star {
+      color: #a5f0b1;
+      margin: 0 16px;
+    }
+
+    /* ── FOOTER ────────────────────────────────────────────── */
+    .footer {
+      background: #0a0909;
+      padding: 100px 0 52px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.8fr 1.4fr 1fr;
+      gap: 80px;
+      align-items: start;
+      margin-bottom: 100px;
+    }
+
+    .footer-cta-heading {
+      font-size: clamp(40px, 4.2vw, 60px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.0;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+
+    .footer-contact-btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border: 1.5px solid rgba(255, 255, 255, 0.65);
+      border-radius: 50px;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .footer-contact-btn:hover {
+      background: #fff;
+      color: #0a0909;
+    }
+
+    .footer-legal-label {
+      font-size: 15px;
+      font-weight: 500;
+      color: #4fc8d0;
+      margin-bottom: 18px;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .footer-legal-links a {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.2s;
+    }
+
+    .footer-legal-links a:hover {
+      color: #fff;
+    }
+
+    .footer-logo-wrap {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-top: -60px;
+    }
+
+    .footer-logo-wrap img {
+      width: auto;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 28px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-social a {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      transition: color 0.2s;
+    }
+
+    .footer-social a:hover {
+      color: #fff;
+    }
+
+    .footer-copyright {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.38);
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────────────── */
+    /* ── HAMBURGER & MOBILE MENU ───────────────────────────── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 200;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+      transform-origin: center;
+    }
+    .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.is-open span:nth-child(2) { opacity: 0; width: 0; }
+    .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: #0a0909;
+      z-index: 150;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+    .mobile-menu.is-open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 60px;
+    }
+    .mobile-menu-links a {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: clamp(40px, 12vw, 72px);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s;
+    }
+    .mobile-menu-links a:hover { color: rgba(255,255,255,0.5); }
+    .mobile-menu.is-open .mobile-menu-links a:nth-child(1) { opacity:1; transform:translateY(0); transition-delay: 0.08s; }
+    .mobile-menu.is-open .mobile-menu-links a:nth-child(2) { opacity:1; transform:translateY(0); transition-delay: 0.14s; }
+    .mobile-menu.is-open .mobile-menu-links a:nth-child(3) { opacity:1; transform:translateY(0); transition-delay: 0.20s; }
+    .mobile-menu-bottom {
+      position: absolute;
+      bottom: 40px;
+      left: 0; right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 28px;
+    }
+    .mobile-menu-social {
+      display: flex;
+      gap: 20px;
+    }
+    .mobile-menu-social a {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      transition: color 0.2s;
+    }
+    .mobile-menu-social a:hover { color: #fff; }
+    .mobile-menu-copy {
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ── TABLET (≤900px) ───────────────────────────────────── */
+    @media (max-width: 900px) {
+      .nav {
+        padding: 10px 24px;
+      }
+      .nav-left a, .nav-right a:not(.nav-icon) { font-size: 14px; }
+      .nav-logo img { height: 60px; }
+
+      .hero { padding: 0 32px; }
+      .hero-headline { font-size: clamp(42px, 7vw, 72px); }
+      .hero-subtitle { font-size: 16px; }
+
+      .services { padding: 72px 32px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { aspect-ratio: 16/9; }
+
+      .philosophy { padding: 80px 32px; }
+      .philosophy-items { grid-template-columns: 1fr; gap: 36px; }
+      .philosophy-images { grid-template-columns: repeat(2, 1fr); }
+      .philosophy-images .philosophy-img:last-child { display: none; }
+
+      .projects { padding: 80px 32px; }
+      .projects-grid { grid-template-columns: 1fr; gap: 48px; }
+
+      .footer { padding: 72px 0 40px; }
+      .footer-inner { padding: 0 32px; }
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+      .footer-logo-wrap {
+        justify-content: flex-start;
+        margin-top: 0;
+      }
+      .footer-logo-wrap img { height: 100px; }
+    }
+
+    /* ── MOBILE (≤600px) ────────────────────────────────────── */
+    @media (max-width: 600px) {
+      /* Nav — logo centre, hide text links, show hamburger */
+      .nav {
+        padding: 8px 20px;
+        grid-template-columns: 1fr auto 1fr;
+      }
+      .nav-left { visibility: hidden; }
+      .nav-right { justify-content: flex-end; }
+      .nav-right a { display: none; }
+      .hamburger { display: flex; }
+      .nav-logo img { height: 56px; }
+
+      /* Hero */
+      .hero { padding: 0 24px; }
+      .hero-content { text-align: left; }
+      .hero-headline {
+        font-size: clamp(36px, 10vw, 52px);
+        margin-bottom: 20px;
+      }
+      .hero-subtitle {
+        font-size: 15px;
+        margin: 0 0 36px;
+        max-width: 100%;
+      }
+      .btn-outline { margin: 0; }
+
+      /* Ticker */
+      .ticker-item { font-size: 10px; padding: 0 28px; letter-spacing: 0.18em; }
+
+      /* Services */
+      .services { padding: 56px 20px; }
+      .services-intro { font-size: 15px; margin-bottom: 40px; }
+      .services-grid { grid-template-columns: 1fr; gap: 3px; }
+      .service-card { aspect-ratio: 4/3; }
+      .service-name { font-size: 18px; bottom: 20px; left: 20px; }
+
+      /* Philosophy */
+      .philosophy { padding: 60px 20px; }
+      .philosophy-title { font-size: clamp(28px, 8vw, 40px); margin-top: 12px; }
+      .philosophy-items { grid-template-columns: 1fr; gap: 32px; padding-top: 32px; }
+      .philosophy-item-text { font-size: 14px; }
+      .philosophy-images { grid-template-columns: 1fr; margin-top: 48px; }
+      .philosophy-img { aspect-ratio: 4/3; }
+      .philosophy-images .philosophy-img:nth-child(n+2) { display: none; }
+
+      /* Projects */
+      .projects { padding: 56px 20px; }
+      .projects-grid { grid-template-columns: 1fr; gap: 40px; }
+      .project-thumb { aspect-ratio: 16/10; }
+      .project-label { font-size: 11px; }
+      .project-desc { font-size: 13px; }
+
+      /* Marquee */
+      .marquee-item { font-size: 10px; padding: 0 32px; letter-spacing: 0.18em; }
+
+      /* Footer */
+      .footer { padding: 56px 0 32px; }
+      .footer-inner { padding: 0 20px; }
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin-bottom: 48px;
+      }
+      .footer-cta-heading { font-size: clamp(32px, 9vw, 48px); margin-bottom: 20px; }
+      .footer-contact-btn { font-size: 10px; padding: 12px 22px; }
+      .footer-legal-links a { font-size: 15px; }
+      .footer-logo-wrap { justify-content: flex-start; margin-top: 0; }
+      .footer-logo-wrap img { height: 80px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .footer-social a { font-size: 10px; }
+      .footer-copyright { font-size: 11px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="#about"
+        style="font-size:16px;font-weight:400;color:rgba(255,255,255,0.85);letter-spacing:0.01em;">About</a>
+      <a href="#portfolio"
+        style="font-size:16px;font-weight:400;color:rgba(255,255,255,0.85);letter-spacing:0.01em;">Portfolio</a>
+    </div>
+    <div class="nav-center">
+      <a href="/" class="nav-logo">
+        <img src="images/Video Corner Logo.png" alt="Three Point Studios">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="#inquire"
+        style="font-size:16px;font-weight:400;color:rgba(255,255,255,0.85);letter-spacing:0.01em;">Inquire</a>
+      <a href="https://instagram.com" class="nav-icon" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ──────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu-links">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#portfolio" class="mobile-link">Work</a>
+      <a href="#inquire" class="mobile-link">Inquire</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <div class="mobile-menu-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+      <span class="mobile-menu-copy">©Three Point Studios 2025</span>
+    </div>
+  </div>
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://framerusercontent.com/assets/Gg24eDTmaEFJiGjrWcqvkJCTw.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1 class="hero-headline">Turn your brand into a story worth watching.</h1>
+      <p class="hero-subtitle">Three Point Studios is for modern brands that are looking to humanize their marketing.
+      </p>
+      <a href="#inquire" class="btn-outline">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- ── LOGO STRIP ───────────────────────────────────────── -->
+  <div class="logo-strip" aria-label="Our clients">
+    <div class="logo-track">
+      <div class="logo-item"><img src="images/Logos/MoonlitLogo.webp" alt="Moonlit Canopy"></div>
+      <div class="logo-item"><img src="images/Logos/UnitedWayBrandon.webp" alt="United Way Brandon"></div>
+      <div class="logo-item"><img src="images/Logos/WheatKingsLogo.webp" alt="Brandon Wheat Kings"></div>
+      <div class="logo-item"><img src="images/Logos/BobcatsLogo.webp" alt="Brandon Bobcats"></div>
+      <div class="logo-item"><img src="images/Logos/BrandonChamberOfCommerce.webp" alt="Brandon Chamber of Commerce"></div>
+      <div class="logo-item"><img src="images/Logos/BrandonFirstLogo.webp" alt="Brandon First"></div>
+      <div class="logo-item"><img src="images/Logos/ConceptHomesLogo.webp" alt="Concept Homes"></div>
+      <div class="logo-item"><img src="images/Logos/FusionLogo.webp" alt="Fusion Credit Union"></div>
+      <div class="logo-item"><img src="images/Logos/GroundworksLogo.webp" alt="Westman Groundworks"></div>
+      <div class="logo-item"><img src="images/Logos/LeechGroup.webp" alt="Leech Group"></div>
+      <!-- duplicated for seamless loop -->
+      <div class="logo-item"><img src="images/Logos/MoonlitLogo.webp" alt="Moonlit Canopy"></div>
+      <div class="logo-item"><img src="images/Logos/UnitedWayBrandon.webp" alt="United Way Brandon"></div>
+      <div class="logo-item"><img src="images/Logos/WheatKingsLogo.webp" alt="Brandon Wheat Kings"></div>
+      <div class="logo-item"><img src="images/Logos/BobcatsLogo.webp" alt="Brandon Bobcats"></div>
+      <div class="logo-item"><img src="images/Logos/BrandonChamberOfCommerce.webp" alt="Brandon Chamber of Commerce"></div>
+      <div class="logo-item"><img src="images/Logos/BrandonFirstLogo.webp" alt="Brandon First"></div>
+      <div class="logo-item"><img src="images/Logos/ConceptHomesLogo.webp" alt="Concept Homes"></div>
+      <div class="logo-item"><img src="images/Logos/FusionLogo.webp" alt="Fusion Credit Union"></div>
+      <div class="logo-item"><img src="images/Logos/GroundworksLogo.webp" alt="Westman Groundworks"></div>
+      <div class="logo-item"><img src="images/Logos/LeechGroup.webp" alt="Leech Group"></div>
+    </div>
+  </div>
+
+  <!-- ── MOSAIC CAROUSEL ──────────────────────────────────── -->
+  <section class="mosaic" aria-hidden="true">
+    <!-- Row 1 — scrolls left -->
+    <div class="mosaic-row">
+      <div class="mosaic-track">
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-4.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Gala142-414.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/10-18BWKvsSEA-46.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/MoonlitCanopy-0209.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/AgDays2025-44.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-5.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/DSC00634.jpg" alt="" loading="lazy"></div>
+        <!-- duplicated for seamless loop -->
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-4.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Gala142-414.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/10-18BWKvsSEA-46.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/MoonlitCanopy-0209.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/AgDays2025-44.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-5.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/DSC00634.jpg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+    <!-- Row 2 — scrolls right -->
+    <div class="mosaic-row">
+      <div class="mosaic-track mosaic-track--reverse">
+        <div class="mosaic-img"><img src="images/AgDays2025-2.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/DSC00553.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-9.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Untitled-128.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/MoonlitCanopy-09179.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Untitled-125.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/fullvideoproduction.webp" alt="" loading="lazy"></div>
+        <!-- duplicated -->
+        <div class="mosaic-img"><img src="images/AgDays2025-2.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/DSC00553.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/GOLDMEDALGAME-9.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Untitled-128.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/MoonlitCanopy-09179.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/Untitled-125.jpg" alt="" loading="lazy"></div>
+        <div class="mosaic-img"><img src="images/fullvideoproduction.webp" alt="" loading="lazy"></div>
+      </div>
+    </div>
+    <!-- Centered headline overlay -->
+    <div class="mosaic-overlay">
+      <h2 class="mosaic-headline">DREAM IT<br>BUILD IT<br>GROW IT</h2>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ─────────────────────────────────────────── -->
+  <section class="services">
+    <p class="section-label">What We Do Best</p>
+    <p class="services-intro">From idea to impact, we deliver comprehensive video solutions for brands, artists, and
+      organizations—whether that's full-service production from concept to final cut, providing crew and resources for
+      your existing projects, or creating scroll-stopping digital content and social media assets that trigger action.
+    </p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/fullvideoproduction.webp" alt="Full Video Production" loading="lazy">
+        <div class="service-overlay"></div>
+        <span class="service-name">Full Video Production</span>
+      </div>
+      <div class="service-card">
+        <img src="images/ProductionSupport.webp" alt="Production Support" loading="lazy">
+        <div class="service-overlay"></div>
+        <span class="service-name">Production Support</span>
+      </div>
+      <div class="service-card">
+        <img src="images/BrandContent.webp" alt="Brand Content" loading="lazy">
+        <div class="service-overlay"></div>
+        <span class="service-name">Brand Content</span>
+      </div>
+      <div class="service-card">
+        <img src="images/AgDays2025-44.jpg" alt="Social Media" loading="lazy">
+        <div class="service-overlay"></div>
+        <span class="service-name">Social Media</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PHILOSOPHY ────────────────────────────────────────── -->
+  <section class="philosophy" id="about">
+    <div class="philosophy-header">
+      <p class="section-label" style="color:rgba(10,9,9,0.38);">Our Strategy</p>
+      <h2 class="philosophy-title">OUR GOALS,<br>OUR WHY,<br>OUR HOW</h2>
+    </div>
+    <div class="philosophy-items">
+      <div class="philosophy-item">
+        <p class="philosophy-item-label">Goal</p>
+        <p class="philosophy-item-text"><strong>We're relentlessly focused on driving business results for
+            brands.</strong> This means understanding where consumers spend their time and building modern analytics
+          disciplines that move them to action. While the industry focuses on reach and efficiency, we prioritize
+          attention, relevance, and measurable results.</p>
+      </div>
+      <div class="philosophy-item">
+        <p class="philosophy-item-label">Why</p>
+        <p class="philosophy-item-text"><strong>We put human beings at the forefront of everything we do,</strong>
+          ensuring our ideas are culturally rich and consumer-led. We approach strategy with practicality, humility, and
+          empathy. Rather than relying on generic messages for mass audiences, we drive relevance and growth by speaking
+          specifically to people based on who they are.</p>
+      </div>
+      <div class="philosophy-item">
+        <p class="philosophy-item-label">How</p>
+        <p class="philosophy-item-text"><strong>A truly consumer-centric storytelling engine.</strong> We lean on
+          creative ideas from both client and agency to find what's "right" based on consumer reactions rather than
+          subjective opinions. The result? Powerful creative that works, born from the consumer up.</p>
+      </div>
+    </div>
+    <div class="philosophy-images">
+      <div class="philosophy-img">
+        <img src="images/MoonlitCanopy-0209.jpg" alt="" loading="lazy">
+      </div>
+      <div class="philosophy-img">
+        <img src="images/Gala142-414.jpg" alt="" loading="lazy">
+      </div>
+      <div class="philosophy-img">
+        <img src="images/DSC00553.jpg" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED PROJECTS ─────────────────────────────────── -->
+  <section class="projects" id="portfolio">
+    <p class="section-label-light">Featured Projects</p>
+    <div class="projects-grid">
+      <a class="project-card" href="projects/concept-homes.html">
+        <div class="project-thumb">
+          <img src="images/Untitled-128.jpg" alt="Concept Homes" loading="lazy">
+        </div>
+        <p class="project-label">Three Point Studios &times; Concept Homes</p>
+        <p class="project-desc">A full home construction story from foundation to finish. We partnered with Concept
+          Homes to capture every phase of this custom build, blending time-lapse, drone, and cinematic visuals to bring
+          the process to life.</p>
+        <span class="project-btn">View Project</span>
+      </a>
+      <a class="project-card" href="projects/manitoba-ag-days.html">
+        <div class="project-thumb">
+          <img src="images/AgDays2025-2.jpg" alt="Manitoba Ag Days" loading="lazy">
+        </div>
+        <p class="project-label">Three Point Studios &times; Manitoba Ag Days</p>
+        <p class="project-desc">Go behind the scenes of Canada's largest indoor agriculture event. Over three days, our
+          full team was on-site capturing the energy, logistics, and stories that powered the trade floor, booths, and
+          keynote stages.</p>
+        <span class="project-btn">View Project</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ───────────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+      <span class="marquee-item">WHY THREE POINT STUDIOS?<span class="marquee-star">✦</span>CONTACT US<span
+          class="marquee-star">✦</span>STORY HEARD<span class="marquee-star">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" id="inquire">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <!-- CTA -->
+        <div>
+          <h2 class="footer-cta-heading">Send Us a<br>Message</h2>
+          <a href="#" class="footer-contact-btn">Contact Us</a>
+        </div>
+        <!-- Legal -->
+        <div>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright Policy</a>
+          </div>
+        </div>
+        <!-- Logo -->
+        <div class="footer-logo-wrap">
+          <a href="/"><img src="images/Video Corner Logo.png" alt="Three Point Studios"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+        <p class="footer-copyright">©Three Point Studios 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function openMenu() {
+      hamburger.classList.add('is-open');
+      mobileMenu.classList.add('is-open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('is-open');
+      mobileMenu.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('is-open') ? closeMenu() : openMenu();
+    });
+
+    mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  </script>
+
+</body>
+
+</html>
