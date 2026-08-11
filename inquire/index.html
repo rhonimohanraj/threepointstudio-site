@@ -72,12 +72,13 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 14px 28px;
+      padding: 10px 28px;
       background: #0a0909;
     }
 
+    /* Sized to sit in the same family as the site nav logo (140px there). */
     .form-bar-logo img {
-      height: 34px;
+      height: 96px;
       width: auto;
     }
 
@@ -131,15 +132,16 @@
     }
 
     @media (max-width: 768px) {
-      .form-bar { padding: 12px 18px; }
-      .form-bar-logo img { height: 28px; }
+      .form-bar { padding: 8px 18px; }
+      .form-bar-logo img { height: 72px; }
       .form-bar-title { font-size: 12px; letter-spacing: 0.14em; }
       .form-bar-close { width: 36px; height: 36px; }
     }
 
-    /* Very narrow screens: drop the wordmark so the title + close still fit. */
-    @media (max-width: 420px) {
-      .form-bar-logo { display: none; }
+    /* Very narrow screens: drop the title, not the logo — the mark matters more. */
+    @media (max-width: 480px) {
+      .form-bar-logo img { height: 56px; }
+      .form-bar-title { display: none; }
     }
   </style>
 </head>
