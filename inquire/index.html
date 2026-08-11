@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Point Studios | Start a Project</title>
+  <meta name="description"
+    content="Tell us about the video you want to create. Three Point Studios turns strategy into content that drives business results.">
+
+  <link rel="icon" href="../images/favicon.webp">
+
+  <style>
+    /* ── FONTS ─────────────────────────────────────────────── */
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Bricolage Grotesque';
+      font-style: normal;
+      font-weight: 600;
+      font-stretch: 100%;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
+    }
+
+    /* ── RESET ─────────────────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* The form owns the whole viewport — the page itself never scrolls. */
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      background: #0a0909;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ── TOP BAR ───────────────────────────────────────────── */
+    .form-bar {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 28px;
+      background: #0a0909;
+    }
+
+    .form-bar-logo img {
+      height: 34px;
+      width: auto;
+    }
+
+    .form-bar-title {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .form-bar-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      flex: 0 0 auto;
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.85);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .form-bar-close:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .form-bar-close svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ── FORM FRAME ────────────────────────────────────────── */
+    /* Full-bleed: fills every pixel below the bar, no max-width, no radius. */
+    .form-frame {
+      flex: 1 1 auto;
+      min-height: 0;
+      width: 100%;
+      background: #fff;
+    }
+
+    .form-frame iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 768px) {
+      .form-bar { padding: 12px 18px; }
+      .form-bar-logo img { height: 28px; }
+      .form-bar-title { font-size: 12px; letter-spacing: 0.14em; }
+      .form-bar-close { width: 36px; height: 36px; }
+    }
+
+    /* Very narrow screens: drop the wordmark so the title + close still fit. */
+    @media (max-width: 420px) {
+      .form-bar-logo { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-bar">
+    <a class="form-bar-logo" href="/" aria-label="Three Point Studios home">
+      <img src="../images/Video Corner Logo.png" alt="Three Point Studios">
+    </a>
+    <span class="form-bar-title">Start a Project</span>
+    <a class="form-bar-close" href="/" aria-label="Back to home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+        stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="form-frame">
+    <iframe id="inquiry-iframe" title="Three Point Studios inquiry form"
+      src="https://forms.tridenteventgroup.ca/forms/three-point-studios-kkbxzr"
+      allow="clipboard-write"></iframe>
+  </div>
+
+</body>
+
+</html>
